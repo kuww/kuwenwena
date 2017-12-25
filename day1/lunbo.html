@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/swiper-3.3.1.jquery.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <style>
+
+@font-face{
+    font-family: 'YaHei Consolas Hybrid';
+    src : url('bb1419/aaaa.ttf');
+}
+
+    .swiper-container{
+        height:100vh;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .box1{
+        position: relative;
+        background: url("img/bg.png") no-repeat
+    }
+    .xbox{
+        position: absolute;
+        height: 90px;
+        top: -27px;
+        left: -22px;
+    }
+    .xbox img:nth-child(2){
+        transform: rotate(180deg);
+        position: absolute;
+        top: 25px;
+        left: 170px;
+    }
+    .fbox{
+        width: 100%;
+        height: 83px;
+        position: absolute;
+        bottom: -10px;
+        left: -5px;
+        background-image: url("img/bg1.png");
+        background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    }
+    .fbox>div{
+        position: absolute;
+        left: 146px;
+        bottom: 10px;
+    }
+    .cbox{
+        width:336px;
+        height: 320px;
+        transform: scale(0.9);
+        
+        position: absolute;
+        left: 50%;
+        top: 44px;
+        margin-left: -168px;
+        background-image: url("img/bg3.png");
+        background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    }
+    .cbox img:nth-child(1){
+        transform: scale(0.9);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -130px;
+        margin-top: -142px
+    }
+    .cbox>div{
+        width:336px;
+        height: 320px;
+        position: absolute;
+        left: 50%;
+        top: 83px;
+        margin-left: -168px;
+    }
+    .cbox img:nth-child(2){
+        transform: scale(0.9);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -148px;
+        margin-top: -142px
+    }
+    .ccbox{
+        position: absolute;
+        left: 50%;
+        top:340px;
+        margin-left: -121px;
+    }
+    .ccbox>img{
+        transform: scale(0.8);                
+    }
+    .textbox{
+        position: absolute;
+        left: 0;
+        top:410px;
+        font-family: YaHei Consolas Hybrid;
+    width: 100%;
+    height: auto;
+    color: rgb(120, 64, 18);
+    font-size: 24px;
+    text-align: center;
+    font-style: italic
+    }
+    #xingm{
+        position: absolute;
+        left: 0;
+        top:380px;
+        font-family:YaHei Consolas Hybrid;
+        font-size: 26px;
+    width: 100%;
+        
+        text-align: center;
+    color: rgb(120, 64, 18);
+    font-style: italic
+    
+        
+    }
+    .box2{
+        background: blue
+    }
+    .box3{
+        background: orange
+    }
+    </style>
+</head>
+<body>
+    <section>
+        
+            <div class="swiper-container">
+                    <div class="swiper-wrapper"> 
+                   <div class="swiper-slide box1">
+                        <div class="xbox ani" swiper-animate-effect="zoomIn1" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                            <img src="img/bg6.png" alt="">
+                            <img src="img/bg7.png" alt="">
+                        </div>
+
+                        <div class="cbox ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s">
+                        <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2s">
+                            <img src="img/bg5.png" alt="">
+                            <img src="img/bg4.png" alt="">
+                        </div>
+                      </div> 
+                        <div class="ccbox ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+                            <img src="img/bg8.png" alt="">                            
+                        </div>
+                        <div id="xingm" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+                            禄壮壮&库静文
+                        </div>
+                        <div class="textbox ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+                                tie the knot one
+                                <br>
+                                jie the knot one hundyed goog close
+                            
+                        </div>
+
+
+
+
+
+                        <div class="fbox ani" swiper-animate-effect="zoomIn1" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                            <div class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+                                    <img src="img/bg2.png" alt="" >
+                            </div>
+                            </div>
+
+                </div> 
+                   <div class="swiper-slide box2">Slide 2</div> 
+                   <div class="swiper-slide box3">Slide 3</div> 
+                   </div> 
+                   <!-- 如果需要分页器 --> 
+                   <div class="swiper-pagination"></div>
+                    <!-- 如果需要导航按钮 --> 
+                   <!-- <div class="swiper-button-prev"></div>  -->
+                   <!-- <div class="swiper-button-next"></div>  -->
+                   <!-- 如果需要滚动条 --> 
+                   <!-- <div class="swiper-scrollbar"></div>  -->
+                   </div> 
+                   <!-- 导航等组件可以放在container之外    -->
+
+    </section>
+</body>
+<script> 
+        var mySwiper = new Swiper ('.swiper-container', { 
+
+            onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+      swiperAnimateCache(swiper); //隐藏动画元素 
+      swiperAnimate(swiper); //初始化完成开始动画
+    }, 
+    onSlideChangeEnd: function(swiper){ 
+      swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+    } ,
+
+
+        direction: 'vertical', loop: true, 
+        
+        // 如果需要分页器
+        //  pagination: '.swiper-pagination', 
+        
+        // 如果需要前进后退按钮 
+        // nextButton: '.swiper-button-next', 
+        // prevButton: '.swiper-button-prev', 
+        
+        // 如果需要滚动条
+        //  scrollbar: '.swiper-scrollbar', 
+         }) 
+        </script>
+        
+</html>
